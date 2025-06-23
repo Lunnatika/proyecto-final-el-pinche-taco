@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - El Pinche Taco</title>
+  <link rel="stylesheet" href="estilos/web.css">
+  <link rel="stylesheet" href="estilos/registro.css">
+  <script src="https://kit.fontawesome.com/6b04339d05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img class="logo-centro" src="imagenes/elpinche.png" alt="Logo de El Pinche Taco con sombrero y bigote">
+    <h1><span class="title1">EL</span><span class="title2">Pinche</span><span class="title3">TACO</span></h1>
+    <h2>Carnitas estilos Michoacán</h2>
+  </header>
+
+  <nav>
+    <ul class="enlaces">
+      <li><a href="somos.html">Quienes somos</a></li>
+      <li><a href="carrito.html">Hace tu pedido</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="baner">
+      <h3 class="degradado-mexico">
+        <img src="imagenes/tacochef.png" alt="Taco Emoji" class="taco-icon"> ¡Registrate y unite al sabor!
+        <img src="imagenes/tacochef.png" alt="Taco Emoji" class="taco-icon">
+      </h3>
+    </section>
+
+    <form class="contenedor" action="https://formspree.io/f/xblgzndb" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+
+      <label for="mensaje">Dejanos tu mensaje:</label>
+      <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <a class="boton" href="index.html">Inicio</a>
+  </main>
+
+  <footer>
+    <p>© 2025 El Pinche Taco. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+</html>

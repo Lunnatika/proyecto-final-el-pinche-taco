@@ -1,0 +1,41 @@
+
+/* === Estilos para la página "Quienes somos" === */
+
+.parrafo {
+  font-family: cursive;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 3px solid #f38e4ae8;
+  box-shadow: 0 0 15px rgba(241, 8, 8, 0.418);
+  background-color: rgba(255, 255, 255, 0.3);
+  line-height: 1.6;
+  border-radius: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .parrafo {
+    width: 80%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parrafo {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parrafo {
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}

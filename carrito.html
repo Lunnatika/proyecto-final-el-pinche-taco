@@ -1,0 +1,56 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - El Pinche Taco</title>
+  <link rel="stylesheet" href="estilos/web.css">
+  <link rel="stylesheet" href="estilos/carrito.css">
+  <script src="https://kit.fontawesome.com/6b04339d05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img class="logo-centro" src="imagenes/elpinche.png" alt="Logo de El Pinche Taco con sombrero y bigote">
+    <h1><span class="title1">EL</span><span class="title2">Pinche</span><span class="title3">TACO</span></h1>
+    <h2>Carnitas estilos Michoacán</h2>
+  </header>
+
+  <nav>
+    <ul class="enlaces">
+      <li><a href="registro.html">Registrate</a></li>
+      <li><a href="somos.html">Quienes somos</a></li>
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="baner">
+      <h2 class="degradado-mexico">
+        <img src="imagenes/tacochef.png" alt="Taco Emoji" class="taco-icon"> ¡Nuestro Menú!
+        <img src="imagenes/tacochef.png" alt="Taco Emoji" class="taco-icon">
+      </h2>
+    </section>
+
+    <section class="section-productos">
+      <h2>¡Elegí tus tacos!</h2>
+      <p>(No te olvides las salsas)</p>
+
+    <!-- Contenedor de productos con clase que el CSS espera -->
+        <div id="section-productos" class="section-productos">
+            <div class="productos-container">
+                <!-- Aquí se inyectan las tarjetas desde productos.js -->
+            </div>
+        </div>
+
+        <a class="boton" href="registro.html" style="margin-top: 30px;">¡Confirmar compra!</a>
+    </main> 
+
+    <footer> 
+        <p>© 2025 El pinche taco. Todos los derechos reservados.</p> 
+    </footer> 
+
+    <!-- Scripts -->
+    <script src="scripts/carrito.js"></script>
+    <script src="scripts/productos.js"></script>
+</body>
+</html>
