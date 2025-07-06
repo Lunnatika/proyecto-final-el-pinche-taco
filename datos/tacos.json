@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "Nachos",
+    "descripcion": "de maiz con una salsa a elección",
+    "precio": 2500,
+    "imagen": "imagenes/nachos.jpg"
+  },
+  {
+    "nombre": "Tacos de carnitas",
+    "descripcion": "carne de cerdo mixta",
+    "precio": 3000,
+    "imagen": "imagenes/tacoscarnitas.jpg"
+  },
+  {
+    "nombre": "Tacos de barbacoa",
+    "descripcion": "Carne de cerdo cocida en salsa de barbacoa",
+    "precio": 3500,
+    "imagen": "imagenes/tacosbarbacoa.jpg"
+  },
+  {
+    "nombre": "tacos de cuerito",
+    "descripcion": "Sabroso cuero de cerdo cocinado en manteca",
+    "precio": 3000,
+    "imagen": "imagenes/tacocuerito.jpeg"
+  },
+  {
+    "nombre": "Tacos de pollo",
+    "descripcion": "Pollo sasonado al mejor estilo Michoacán",
+    "precio": 3000,
+    "imagen": "imagenes/tacospollo.jpg"
+  },
+  {
+    "nombre": "Guacamole",
+    "descripcion": "Salsa de palta, con cebolla, cilantro y limon",
+    "precio": 1000,
+    "imagen": "imagenes/guacamole.jpg"
+  },
+  {
+    "nombre": "Salsa Roja",
+    "descripcion": "Salsa picante con tomate y chile",
+    "precio": 1000,
+    "imagen": "imagenes/salsaroja.jpg"
+  },
+  {
+    "nombre": "Salsa Verde",
+    "descripcion": "Salsa de palta con cebolla ajo y chile",
+    "precio": 1000,
+    "imagen": "imagenes/salsaverde.jpg"
+  }
+]

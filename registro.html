@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+< lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metaetiquetas SEO -->
+  <meta name="description" content="Disfrutá auténticos tacos estilo Michoacán en El Pinche Taco. Menú online, reseñas, pedidos personalizados y mucho sabor.">
+  <meta name="keywords" content="tacos, comida mexicana, El Pinche Taco, carnitas, Michoacán, salsas, pedidos online, comida casera">
+  <meta name="author" content="El Pinche Taco">
+  <meta name="robots" content="index, follow">
   <title>Registro - El Pinche Taco</title>
   <link rel="stylesheet" href="estilos/web.css">
   <link rel="stylesheet" href="estilos/registro.css">
@@ -15,8 +20,8 @@
     <h2>Carnitas estilos Michoacán</h2>
   </header>
 
-  <nav>
-    <ul class="enlaces">
+  <nav aria-label="Navegación principal">
+    <ul class="enlaces"tabindex="0" aria-label="barra de navegación">
       <li><a href="somos.html">Quienes somos</a></li>
       <li><a href="carrito.html">Hace tu pedido</a></li>
     </ul>
@@ -30,28 +35,32 @@
       </h3>
     </section>
 
-    <form class="contenedor" action="https://formspree.io/f/xblgzndb" method="POST">
+    <form id="form-registro" class="contenedor">
       <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+      <input type="text" id="nombre" aria-label="Nombre completo" required>
 
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" required>
+      <label for="email">Email: </label>
+      <input type="email" id="email" aria-label="Correo electrónico" required>
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" aria-label="Contraseña" required>
 
-      <label for="mensaje">Dejanos tu mensaje:</label>
-      <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-
-      <button type="submit">Enviar</button>
+      <button type="submit">Registrar</button>
     </form>
+  </main>
 
-    <a class="boton" href="index.html">Inicio</a>
+  <script src="scripts/registro.js"></script>
+</body>
+
+
+
+    <a class="boton" tabindex="0" aria-label="inicio" href="index.html">Inicio</a>
   </main>
 
   <footer>
     <p>© 2025 El Pinche Taco. Todos los derechos reservados.</p>
   </footer>
+  <script src="scripts/registro.js"></script>
 </body>
-</html>
+
 </html>

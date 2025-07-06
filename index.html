@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metaetiquetas SEO -->
+  <meta name="description" content="Disfrutá auténticos tacos estilo Michoacán en El Pinche Taco. Menú online, reseñas, pedidos personalizados y mucho sabor.">
+  <meta name="keywords" content="tacos, comida mexicana, El Pinche Taco, carnitas, Michoacán, salsas, pedidos online, comida casera">
+  <meta name="author" content="El Pinche Taco">
+  <meta name="robots" content="index, follow">
+  
   <title>El Pinche Taco</title>
-  <!-- Solo un CSS principal donde centralizamos todo -->
   <link rel="stylesheet" href="estilos/web.css">
   <script src="https://kit.fontawesome.com/6b04339d05.js" crossorigin="anonymous"></script>
 </head>
@@ -13,13 +18,18 @@
     <img class="logo-centro" src="imagenes/elpinche.png" alt="Logo de El Pinche Taco con sombrero y bigote">
     <h1><span class="title1">EL</span><span class="title2">Pinche</span><span class="title3">TACO</span></h1>
     <h2>Carnitas estilos Michoacán</h2>
+    <!-- Saludo dinámico -->
+    <div id="saludo-usuario" class="parrafo"></div>
   </header>
 
-  <nav>
-    <ul class="enlaces">
+
+  <nav aria-label="Navegación principal">
+    <ul class="enlaces" tabindex="0" aria-label="barra de navegación">
       <li><a href="registro.html">Registrate</a></li>
       <li><a href="somos.html">Quienes somos</a></li>
       <li><a href="carrito.html">Hace tu pedido</a></li>
+      <li><a href="vercarrito.html">Ver Carrito</a></li>
+      <li><a href="login.html">Iniciar sesión</a></li>
     </ul>
   </nav>
 
@@ -31,16 +41,39 @@
       </h2>
     </section>
     <div>
-        <p class="parrafo">
-            Descubrí el sabor auténtico de las carnitas estilo Michoacán. Unite a nuestra comunidad de fanáticos del buen taco.
-        </p>
+      <p class="parrafo">
+        Descubrí el sabor auténtico de las carnitas estilo Michoacán. Unite a nuestra comunidad de fanáticos del buen taco.
+      </p>
     </div>
-    <a class="boton" href="registro.html"> ¡Quiero registrarme!</a>
-</main>
+    <a class="boton" tabindex="0" aria-label="Registrarse" href="registro.html"> ¡Quiero registrarme!</a>
+  </main>
+
+  <section class="reseñas">
+  <h2 class="degradado-mexico">Reseñas de Nuestros Clientes</h2>
+  <div class="reseñas-grid">
+    <article class="tarjeta-reseña">
+      <p class="comentario">🌮 ¡Los mejores tacos que probé fuera de México!</p>
+      <p class="autor">– Mariana R.</p>
+    </article>
+    <article class="tarjeta-reseña">
+      <p class="comentario">🔥 Las salsas están buenísimas. Pidan la roja, no se van a arrepentir.</p>
+      <p class="autor">– Fede T.</p>
+    </article>
+    <article class="tarjeta-reseña">
+      <p class="comentario">💯 Excelente atención y sabor. Se siente casero.</p>
+      <p class="autor">– Laura M.</p>
+    </article>
+    <article class="tarjeta-reseña">
+      <p class="comentario">🧡 La mezcla entre lo mexicano y argentino es lo mejor.</p>
+      <p class="autor">– Nico C.</p>
+    </article>
+  </div>
+</section>
 
   <footer>
     <p>© 2025 El Pinche Taco. Todos los derechos reservados.</p>
+    <p>Desarrollado por Valeria Alvarez</p>
   </footer>
-
+  <script src="scripts/index.js"></script>
 </body>
 </html>

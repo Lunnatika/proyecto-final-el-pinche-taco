@@ -21,10 +21,10 @@
 .producto {
   width: 23%;
   min-width: 250px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
-  border: 3px solid #da8c17a4;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border: 3px solid #fa020260;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
   padding: 10px 12px;
   margin: 10px auto;
   transition: transform 0.2s;
@@ -56,6 +56,31 @@
   transform: scale(1.2) rotate(-5deg);
   box-shadow: 0 0 10px rgba(255, 180, 0, 0.6);
 }
+
+#carrito-icono {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#carrito-icono i {
+  font-size: 24px;
+  color: #138052;
+}
+
+#contador-carrito {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
 
 /* === Responsividad === */
 @media (max-width: 1200px) {

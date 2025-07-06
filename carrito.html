@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metaetiquetas SEO -->
+  <meta name="description" content="Disfrutá auténticos tacos estilo Michoacán en El Pinche Taco. Menú online, reseñas, pedidos personalizados y mucho sabor.">
+  <meta name="keywords" content="tacos, comida mexicana, El Pinche Taco, carnitas, Michoacán, salsas, pedidos online, comida casera">
+  <meta name="author" content="El Pinche Taco">
+  <meta name="robots" content="index, follow">
   <title>Carrito - El Pinche Taco</title>
   <link rel="stylesheet" href="estilos/web.css">
   <link rel="stylesheet" href="estilos/carrito.css">
@@ -13,13 +18,16 @@
     <img class="logo-centro" src="imagenes/elpinche.png" alt="Logo de El Pinche Taco con sombrero y bigote">
     <h1><span class="title1">EL</span><span class="title2">Pinche</span><span class="title3">TACO</span></h1>
     <h2>Carnitas estilos Michoacán</h2>
+    <!-- Saludo dinámico -->
+    <div id="saludo-usuario" class="parrafo"></div>
   </header>
 
-  <nav>
-    <ul class="enlaces">
+  <nav aria-label="Navegación principal">
+    <ul class="enlaces"tabindex="0" aria-label="barra de navegación">
       <li><a href="registro.html">Registrate</a></li>
       <li><a href="somos.html">Quienes somos</a></li>
       <li><a href="index.html">Inicio</a></li>
+      <li><a href="vercarrito.html">Ver Carrito</a></li>
     </ul>
   </nav>
 
@@ -41,8 +49,11 @@
                 <!-- Aquí se inyectan las tarjetas desde productos.js -->
             </div>
         </div>
-
-        <a class="boton" href="registro.html" style="margin-top: 30px;">¡Confirmar compra!</a>
+        <div id="carrito-icono" aria-label="Ícono del carrito de compras con contador" tabindex="0"><!--tabindex="0" hace que sea seleccionable con tab-->
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+          <span id="contador-carrito">0</span>
+        </div>
+        <a class="boton" href="registro.html" tabindex="0" aria-label="confirmar compra " style="margin-top: 30px;">¡Confirmar compra!</a>
     </main> 
 
     <footer> 
@@ -50,6 +61,7 @@
     </footer> 
 
     <!-- Scripts -->
+    <script src="scripts/saludo.js"></script>
     <script src="scripts/carrito.js"></script>
     <script src="scripts/productos.js"></script>
 </body>

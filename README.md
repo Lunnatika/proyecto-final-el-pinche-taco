@@ -64,4 +64,13 @@ el-pinche-taco/
 
 © 2025 El Pinche Taco. Todos los derechos reservados.
 
+## ✅ Actualizaciones Recientes (Versión Final)
+
+- ✨ **Sección de Reseñas añadida**: nueva sección implementada en `index.html` usando `CSS Grid`, mostrando opiniones de clientes reales de forma responsiva.
+- 🛍️ **Carrito dinámico**: permite sumar/restar productos, muestra el total en tiempo real, y limpia el carrito al confirmar la compra.
+- 🔐 **Login/Registro funcional**: con validación, persistencia mediante `localStorage` y saludo personalizado al iniciar sesión.
+- 🌐 **API simulada con `fetch()`**: integración con un archivo `tacos.json` alojado en GitHub, consumido dinámicamente como fuente de productos.
+- 🎨 **Estilo del login actualizado**: ahora igualado visualmente al formulario de registro.
+- ♿ **Accesibilidad mejorada**: navegación por teclado (`tabindex`), descripciones (`aria-label`) y estructura clara para lectores de pantalla.
+- 📈 **SEO optimizado**: se agregaron metaetiquetas (`description`, `keywords`, `og`, `twitter`) para mejorar el posicionamiento y la presentación en redes sociales.
 

@@ -1,5 +1,4 @@
-
-
+/* === Estilos para la página web de tacos === */
 /* === Reset y fuente base === */
 * {
   margin: 0;
@@ -159,6 +158,79 @@ footer {
   background-color: rgba(255, 255, 255, 0.158);
   margin-top: 40px;
 }
+
+/* === Sección de Reseñas === */
+.reseñas {
+  padding: 50px 20px;
+  text-align: center;
+  /*background-color: rgba(255, 255, 255, 0.25);*/
+  margin-top: 40px;
+}
+
+.reseñas h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tarjeta-reseña {
+  padding: 20px;
+  border: 2px solid rgba(11, 163, 80, 0.411);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.20);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-reseña:hover {
+  transform: scale(1.03);
+}
+
+.comentario {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.autor {
+  font-weight: bold;
+  color: #333;
+}
+
+#saludo-usuario {
+  display: block;
+  margin: 20px auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  color: darkgreen;
+}
+#logout-btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background: linear-gradient(to right, #007a33, #ffffff, #d42d2d);;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+  background-color: crimson;
+  transform: scale(1.05);
+}
+
 
 /* === Responsividad === */
 @media (max-width: 768px) {
