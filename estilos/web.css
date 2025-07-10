@@ -233,6 +233,15 @@ footer {
 
 
 /* === Responsividad === */
+
+@media (max-width: 600px) {
+  nav ul.enlaces {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .title1, .title2, .title3 {
     font-size: 2.5rem;
